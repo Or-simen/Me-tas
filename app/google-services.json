@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "690045385575",
+    "firebase_url": "https://me-tas-default-rtdb.firebaseio.com",
+    "project_id": "me-tas",
+    "storage_bucket": "me-tas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690045385575:android:4c71fd612ab9c74cba0dc2",
+        "android_client_info": {
+          "package_name": "com.example.me_tas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK4kXZHFfiO2sjfLwMke2KBDLiY6xPCuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

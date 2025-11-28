@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- l -->
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='Me-tas'
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnReporter"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="45dp"
+        android:gravity="center"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTakeoffreporter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/kkk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:src="@drawable/megaphone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="דיווח על כלי טיס"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginEnd="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnTakeoffreporter"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnReporter"
+        app:layout_constraintStart_toStartOf="@+id/btnReporter"
+        app:layout_constraintTop_toBottomOf="@+id/btnReporter">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plane_departure"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="דיווח המראה"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginStart="70dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnarrivalreporter"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTakeoffreporter"
+        app:layout_constraintStart_toStartOf="@+id/btnTakeoffreporter"
+        app:layout_constraintTop_toBottomOf="@+id/btnTakeoffreporter">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/button_border">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrival"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="דיווח נחיתה"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginStart="80dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnLister"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnReporter"
+        app:layout_constraintStart_toStartOf="@+id/btnReporter"
+        app:layout_constraintTop_toBottomOf="@+id/btnarrivalreporter">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/button_border">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info"
+                android:layout_marginStart="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="סטטוס כלי טיס"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnLastTakeOffs"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnReporter"
+        app:layout_constraintStart_toStartOf="@+id/btnReporter"
+        app:layout_constraintTop_toBottomOf="@+id/btnLister">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/button_border">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bookmark"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="היסטוריית המראות שלי"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnreportlist"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:id="@+id/llreportlistbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/alert_button_green">
+            <TextView
+                android:id="@+id/tvreportnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אין התרעות"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvtitlefullreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="סיבת הדיווח:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvfullreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="אין סיבה"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtitlefullreason"
+        app:layout_constraintBottom_toTopOf="@id/vtophorizontal"/>
+    <View
+        android:id="@+id/vtophorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tvfullreason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/tvtitleappeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="לערער:"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vtophorizontal"/>
+
+    <EditText
+        android:id="@+id/etappeal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="סיבת ערעור"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvtitleappeal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vbottomhorizontal"/>
+
+    <View
+        android:id="@+id/vbottomhorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/etappeal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/tvappeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הגשת ערעור"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vbottomhorizontal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

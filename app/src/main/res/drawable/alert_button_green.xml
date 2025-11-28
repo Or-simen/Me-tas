@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/green"/>
+        </shape>
+    </item>
+
+    <item android:right="0dp" android:left="0dp">
+        <shape>
+            <gradient android:angle="90"
+                android:startColor="@color/shading_green" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:color="@color/border_black" android:width="6dp"/>
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+
+</layer-list>

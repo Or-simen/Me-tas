@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".reportpageActivity">
+
+
+    <TextView
+        android:id="@+id/tvplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="מיקום הבקאי"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/tvplace"
+        app:layout_constraintStart_toStartOf="@+id/tvplace"
+        app:layout_constraintTop_toBottomOf="@+id/tvplace"/>
+    <TextView
+        android:id="@+id/tvreason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הזן סיבת דיווח:"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnlocation" />
+
+    <EditText
+        android:id="@+id/etreason"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="למשל: אינו ברשימה"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvreason"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnreport"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintTop_toBottomOf="@id/etreason"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_button"
+            android:orientation="vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="דיווח"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
